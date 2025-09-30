@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 Boxes</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px;
+    }
+
+    .container {
+      position: relative;
+      width: 600px; /* enough room for zigzag */
+      height: 660px; /* enough room for 3 boxes */
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+    }
+
+    .box1 {
+      top: 0;
+      left: 0;
+      background-color: cadetblue;
+      padding: 20px;
+      border: 10px solid black;
+      font-size: 10px;
+    }
+
+    .box1 p {
+      margin: 0;
+    }
+
+    .box2 {
+      top: 200px;   /* exactly below box1 */
+      left: 200px;  /* shifted right */
+      background-color: gold;
+      border-top: 20px solid black;
+      border-bottom: 20px solid black;
+      border-left: 10px solid black;
+      border-right: 10px solid black;
+    }
+
+    .box3 {
+      top: 400px;   /* below box2 */
+      left: 0;      /* back to left */
+      background-color: indianred;
+      border: 10px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box box1">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Aliquam at sapien porttitor urna elementum lacinia. In
+        id magna pulvinar, ultricies lorem id, vehicula elit.
+        Aliquam eu luctus nisl, vitae pellentesque magna.
+        Phasellus dolor metus, laoreet ac convallis sit amet,
+        efficitur sed dolor.
+      </p>
+    </div>
+
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+  </div>
+</body>
+</html>
